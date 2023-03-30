@@ -54,4 +54,5 @@ class Client():
 
     async def __aexit__(self, exc_type, exc, tb):
         await self.table_row.session.close()
+        await self.storage.session.close()
         await self.session.close()
