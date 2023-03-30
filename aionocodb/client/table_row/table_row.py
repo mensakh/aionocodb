@@ -457,9 +457,6 @@ class TableRow:
             json=body
         ) as response:
             return await response.json()
-
-            
-            # return await Response.table_row.delete_all_rows_by_ids(self, project, table, body, response)
         
 
     @Helpers.handler
